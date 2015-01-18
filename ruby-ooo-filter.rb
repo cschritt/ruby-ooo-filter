@@ -20,12 +20,11 @@ def get_subjects
   return subjects
 end
 
-def filter_mail (*message, forward_address)
+def filter_mail (forward_address)
   # read mail and subjects
   input = ARGF.read
   mail = Mail.read_from_string(input)
   subjects = get_subjects
-  puts subjects
   if(subjects.any? {|subject| subject.casecmp(mail.subject)})
     $logger.info "From: #{mail.from} - Subject: #{mail.subject} - auto reply detected - discarding email"
     exit
