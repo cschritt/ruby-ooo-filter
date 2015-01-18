@@ -1,5 +1,6 @@
 abwesend
 abwesenheit
+abwesenheitsnotiz
 auto response
 automated response
 automatische antwort
