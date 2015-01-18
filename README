@@ -1,0 +1,3 @@
+Usage: ruby-ooo-filter.rb [options] E-MAIL
+    -f E-MAIL-ADDRESS,               Address where E-Mails are forwarded to
+        --forward-address
